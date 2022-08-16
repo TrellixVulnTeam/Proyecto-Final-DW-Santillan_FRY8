@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;0,300;1,700 & family= Roboto:wght@100;300;500;900 & display= intercambio');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: moccasin;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    
+}
+
+.navbar .menu{
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: white;
+}
+
+.navbar .menu-bar{
+    display: none;
+}
+
+.navbar .shop{
+    grid-column: 8/9;
+    
+}
+
+
+/* SECCION MAIN */
+
+.hero{
+    height: 80vh;
+    background-image: url(../img/KL65JXJGSZAEPNQFCRWA2RABYU.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    
+
+}
+
+.hero .info-content{
+    grid-column: 7 / 10;
+    grid-row: 3/7;
+    color: black;
+}
+
+.hero h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero h2{
+    font-size: 3em;
+}
+
+.hero p{
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid coral;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover{
+    background-color: gold;
+}
+
+
+
+/* SECCION FOOTER */
+
+.footer{
+    display: grid;
+    height: 70px;
+    align-items: center;
+    background-color: moccasin;
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .shop{
+        display: none;
+    }
+
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .navbar .menu{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: moccasin;
+        margin-top: 38em;
+        transform: translateX(170%);
+        transition: all 1s;
+    }
+
+    .navbar .menu-toggle{
+        transform: translateX(70%);
+    }
+
+
+    /* SECCION MAIN */
+
+    .hero .info-content{
+        grid-column: 2/10;
+        grid-row: 5/8;
+    }
+
+    .hero h2{
+        font-size: 2em;
+    }
+       
+}
+
+
+    
+
+    
+
